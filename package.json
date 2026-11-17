@@ -1,0 +1,18 @@
+{
+  "name": "domino",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "test": "npm -w @domino/engine run test",
+    "dev:web": "npm -w @domino/web run dev",
+    "build:web": "npm -w @domino/web run build",
+    "dev:server": "npm -w @domino/server run dev",
+    "start:server": "npm -w @domino/server run start"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
